@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="605" height="605" viewBox="0 0 605 605">
+  <g id="constellation-dragon" transform="translate(-1403 -2484)">
+    <rect id="bg" width="605" height="605" transform="translate(1403 2484)" fill="none" opacity="0"/>
+    <g id="lines">
+      <path id="Trazado_15" data-name="Trazado 15" d="M1814,3044.059l-48.106-121.823,97.116-81.974L1812.1,2681.106l-31.587,87.646L1705,2786l-44.362,64.8-56.52-81.724,10.041-88.114,73.884-54.865,34.542-33.692,32.937-20.8,25.793-41.716-89.93-1.381-66.813,13.14-59.618,16.407L1528,2576.07l-54,58.063-55.068,33.078" fill="none" stroke="#ccad6c" stroke-width="1"/>
+      <path id="Trazado_16" data-name="Trazado 16" d="M1512,2759l21.617-128.69L1528.09,2576" fill="none" stroke="#ccad6c" stroke-width="1"/>
+    </g>
+    <g id="stars">
+      <circle id="Elipse_40" data-name="Elipse 40" cx="3" cy="3" r="3" transform="translate(1702 2783)" fill="#fff"/>
+      <circle id="Elipse_41" data-name="Elipse 41" cx="2.5" cy="2.5" r="2.5" transform="translate(1658 2848)" fill="#fff"/>
+      <circle id="Elipse_56" data-name="Elipse 56" cx="2.5" cy="2.5" r="2.5" transform="translate(1778 2766)" fill="#fff"/>
+      <circle id="Elipse_57" data-name="Elipse 57" cx="2" cy="2" r="2" transform="translate(1810 2679)" fill="#fff"/>
+      <circle id="Elipse_58" data-name="Elipse 58" cx="2" cy="2" r="2" transform="translate(1861 2838)" fill="#fff"/>
+      <circle id="Elipse_60" data-name="Elipse 60" cx="2" cy="2" r="2" transform="translate(1812 3042)" fill="#fff"/>
+      <circle id="Elipse_59" data-name="Elipse 59" cx="4" cy="4" r="4" transform="translate(1762 2918)" fill="#fff"/>
+      <circle id="Elipse_42" data-name="Elipse 42" cx="2" cy="2" r="2" transform="translate(1602 2767)" fill="#fff"/>
+      <circle id="Elipse_43" data-name="Elipse 43" cx="4" cy="4" r="4" transform="translate(1610 2677)" fill="#fff"/>
+      <circle id="Elipse_44" data-name="Elipse 44" cx="4" cy="4" r="4" transform="translate(1684 2622)" fill="#fff"/>
+      <circle id="Elipse_45" data-name="Elipse 45" cx="2.5" cy="2.5" r="2.5" transform="translate(1720 2590)" fill="#fff"/>
+      <circle id="Elipse_46" data-name="Elipse 46" cx="2.5" cy="2.5" r="2.5" transform="translate(1753 2569)" fill="#fff"/>
+      <circle id="Elipse_47" data-name="Elipse 47" cx="4" cy="4" r="4" transform="translate(1777 2526)" fill="#fff"/>
+      <circle id="Elipse_48" data-name="Elipse 48" cx="1.5" cy="1.5" r="1.5" transform="translate(1690 2527)" fill="#fff"/>
+      <circle id="Elipse_49" data-name="Elipse 49" cx="4.5" cy="4.5" r="4.5" transform="translate(1620 2537)" fill="#fff"/>
+      <circle id="Elipse_50" data-name="Elipse 50" cx="2" cy="2" r="2" transform="translate(1563 2556)" fill="#fff"/>
+      <circle id="Elipse_51" data-name="Elipse 51" cx="2" cy="2" r="2" transform="translate(1526 2574)" fill="#fff"/>
+      <circle id="Elipse_52" data-name="Elipse 52" cx="2" cy="2" r="2" transform="translate(1472 2632)" fill="#fff"/>
+      <circle id="Elipse_53" data-name="Elipse 53" cx="3" cy="3" r="3" transform="translate(1416 2664)" fill="#fff"/>
+      <circle id="Elipse_54" data-name="Elipse 54" cx="3.5" cy="3.5" r="3.5" transform="translate(1530 2627)" fill="#fff"/>
+      <circle id="Elipse_55" data-name="Elipse 55" cx="4" cy="4" r="4" transform="translate(1508 2755)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

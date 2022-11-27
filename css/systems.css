@@ -1,0 +1,70 @@
+/*-- Constellations --*/
+
+.constellation-scadrian_nalthian{ translate: -73.6rem -33.2rem; }
+.constellation-scadrian_nalthian svg{ width: 87.5rem; height: 87.5rem; }
+.main--zoom-in .constellation svg{
+    scale: 0.25;
+    /* translate: 0 calc((30.5rem * 0.25) - .5rem);*/
+    translate: 0 calc(((100vw / 4) * 0.25));
+}
+
+.constellation-rosharan{ translate: -69.9rem 44.1rem; }
+.constellation-rosharan svg{ width: 61.4rem; height: 61.4rem; }
+
+.constellation-selish{ translate: 15.8rem 40.6rem; }
+.constellation-selish svg{ width: 63rem; height: 63rem; }
+
+.constellation-drominad{ translate: 56.1rem 33.5rem; }
+.constellation-drominad svg{ width: 63rem; height: 63rem;  }
+
+.constellation-taldain{ translate: 50.8rem 2rem; }
+.constellation-taldain svg{ width: 33.6rem; height: 33.6rem; }
+
+.constellation-threnodite{ translate: -7.7rem -44.6rem; }
+.constellation-threnodite svg{ width: 42.8rem; height: 42.8rem; }
+
+.constellation-dragon{ translate: 74.5rem -23.8rem; }
+.constellation-dragon svg{ width: 60.5rem; height: 60.5rem; }
+
+
+
+/*-- Scadrian --*/
+.system--scadrian .system__content,
+.system--scadrian .system__sun_content{ translate: -73.6rem -33.2rem; }
+.main--zoom-in #scadrian_system .system__sun{ r: 2.35rem; }
+
+
+/*-- Taldain --*/
+.system--taldain .system__content,
+.system--taldain .system__sun_content{ translate: 50.8rem 2rem; }
+.main--zoom-in #taldain_system .system__sun{ r: 11.85rem; }
+
+
+/*-- Threnodite --*/
+.system--threnodite .system__content,
+.system--threnodite .system__sun_content{ translate: -7.7rem -44.6rem; }
+.main--zoom-in #threnodite_system .system__sun{ r: 2.8rem; }
+
+
+/*-- Nalthian --*/
+.system--nalthian .system__content,
+.system--nalthian .system__sun_content{ translate: -80.8rem -8.3rem; }
+.main--zoom-in #nalthian_system .system__sun{ r: 2.75rem; }
+
+
+/*-- Rosharan --*/
+.system--rosharan .system__content,
+.system--rosharan .system__sun_content{ translate: -69.9rem 44.1rem; }
+.main--zoom-in #rosharan_system .system__sun{ r: 3.45rem; }
+
+
+/*-- Selish --*/
+.system--selish .system__content,
+.system--selish .system__sun_content{ translate: 15.8rem 40.6rem; }
+.main--zoom-in #selish_system .system__sun{ r: 3rem; }
+
+
+/*-- Drominad --*/
+.system--drominad .system__content,
+.system--drominad .system__sun_content{ translate: 56.1rem 33.5rem; }
+.main--zoom-in #drominad_system .system__sun{ r: 4rem; }

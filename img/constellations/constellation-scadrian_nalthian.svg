@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="875" height="875" viewBox="0 0 875 875">
+  <g id="constellation-scadrian_nalthian" transform="translate(212 -2255)">
+    <rect id="bg" width="875" height="875" transform="translate(-212 2255)" fill="none" opacity="0"/>
+    <g id="lines">
+      <path id="line" d="M54,3024l76.508,31.812-27.65-60.779L152.033,2941l65.043,39.6,47.705-15.405,66.891-31.977,57.622-47.379L497.4,2757.947l44.936-12.214,98.635-117.675" fill="none" stroke="#ccad6c" stroke-width="1"/>
+      <path id="line-2" data-name="line" d="M544,2526l-53.726,78.559-76.413-.347" fill="none" stroke="#ccad6c" stroke-width="1"/>
+      <path id="line-3" data-name="line" d="M465,2551l-50.89,53.334-54.961,135.014L182.689,2786.2" fill="none" stroke="#ccad6c" stroke-width="1"/>
+      <path id="line-4" data-name="line" d="M225,2692l-42.185,94.526,42.4,109.926,38.952,68.858" fill="none" stroke="#ccad6c" stroke-width="1"/>
+    </g>
+    <g id="stars">
+      <circle id="star" cx="1" cy="1" r="1" transform="translate(224 2691)" fill="#fff"/>
+      <circle id="star-2" data-name="star" cx="1" cy="1" r="1" transform="translate(151 2940)" fill="#fff"/>
+      <circle id="star-3" data-name="star" cx="5" cy="5" r="5" transform="translate(178 2781)" fill="#fff"/>
+      <circle id="star-4" data-name="star" cx="3" cy="3" r="3" transform="translate(222 2893)" fill="#fff"/>
+      <circle id="star-5" data-name="star" cx="4" cy="4" r="4" transform="translate(260 2961)" fill="#fff"/>
+      <circle id="star-6" data-name="star" cx="4" cy="4" r="4" transform="translate(327 2929)" fill="#fff"/>
+      <circle id="star-7" data-name="star" cx="5" cy="5" r="5" transform="translate(384 2881)" fill="#fff"/>
+      <circle id="star-8" data-name="star" cx="3" cy="3" r="3" transform="translate(494 2755)" fill="#fff"/>
+      <circle id="star-9" data-name="star" cx="4" cy="4" r="4" transform="translate(538 2742)" fill="#fff"/>
+      <circle id="star-10" data-name="star" cx="4" cy="4" r="4" transform="translate(637 2624)" fill="#fff"/>
+      <circle id="star-11" data-name="star" cx="4" cy="4" r="4" transform="translate(213 2976)" fill="#fff"/>
+      <circle id="star-12" data-name="star" cx="3" cy="3" r="3" transform="translate(100 2992)" fill="#fff"/>
+      <circle id="star-13" data-name="star" cx="3" cy="3" r="3" transform="translate(127 3052)" fill="#fff"/>
+      <circle id="star-14" data-name="star" cx="3" cy="3" r="3" transform="translate(51 3021)" fill="#fff"/>
+      <circle id="star-15" data-name="star" cx="3" cy="3" r="3" transform="translate(356 2736)" fill="#fff"/>
+      <circle id="star-16" data-name="star" cx="4" cy="4" r="4" transform="translate(410 2600)" fill="#fff"/>
+      <circle id="star-17" data-name="star" cx="5" cy="5" r="5" transform="translate(460 2546)" fill="#fff"/>
+      <circle id="star-18" data-name="star" cx="4" cy="4" r="4" transform="translate(486 2600)" fill="#fff"/>
+      <circle id="star-19" data-name="star" cx="5" cy="5" r="5" transform="translate(539 2521)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

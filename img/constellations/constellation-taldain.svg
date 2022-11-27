@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="336" height="336" viewBox="0 0 336 336">
+  <g id="constellation-taldain" transform="translate(-1300 -2877)">
+    <rect id="bg" width="336" height="336" transform="translate(1300 2877)" fill="none" opacity="0"/>
+    <g id="lines">
+      <path id="line" d="M1468,3045l121.529-89.019-11.421-44.012" fill="none" stroke="#ccad6c" stroke-width="1"/>
+      <path id="line-2" data-name="line" d="M1468,3045l-69.04-82.51-28.068,15.13-36.62-66.881" fill="none" stroke="#ccad6c" stroke-width="1"/>
+      <path id="line-3" data-name="line" d="M1351.11,3048.01,1468,3045" fill="none" stroke="#ccad6c" stroke-width="1"/>
+      <path id="line-4" data-name="line" d="M1468,3045l-5.744,69.3,51.725,32.986" fill="none" stroke="#ccad6c" stroke-width="1"/>
+      <path id="line-5" data-name="line" d="M1405.5,3197.5l-16.375-53.284,73.18-29.843" fill="none" stroke="#ccad6c" stroke-width="1"/>
+    </g>
+    <g id="stars">
+      <circle id="star" cx="1" cy="1" r="1" transform="translate(1467 3044)" fill="#fff"/>
+      <circle id="star-2" data-name="star" cx="4" cy="4" r="4" transform="translate(1585 2952)" fill="#fff"/>
+      <circle id="star-3" data-name="star" cx="3" cy="3" r="3" transform="translate(1396 2960)" fill="#fff"/>
+      <circle id="star-4" data-name="star" cx="2" cy="2" r="2" transform="translate(1349 3046)" fill="#fff"/>
+      <circle id="star-5" data-name="star" cx="3" cy="3" r="3" transform="translate(1459 3111)" fill="#fff"/>
+      <circle id="star-6" data-name="star" cx="3" cy="3" r="3" transform="translate(1511 3144)" fill="#fff"/>
+      <circle id="star-7" data-name="star" cx="3" cy="3" r="3" transform="translate(1386 3141)" fill="#fff"/>
+      <circle id="star-8" data-name="star" cx="4.5" cy="4.5" r="4.5" transform="translate(1367 2973)" fill="#fff"/>
+      <circle id="star-9" data-name="star" cx="5" cy="5" r="5" transform="translate(1329 2906)" fill="#fff"/>
+      <circle id="star-10" data-name="star" cx="5" cy="5" r="5" transform="translate(1573 2907)" fill="#fff"/>
+      <circle id="star-11" data-name="star" cx="5.5" cy="5.5" r="5.5" transform="translate(1400 3192)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

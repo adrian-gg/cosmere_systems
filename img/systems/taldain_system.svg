@@ -1,0 +1,65 @@
+<svg id="threnodite_system" xmlns="http://www.w3.org/2000/svg" width="1220" height="1220" viewBox="0 0 1220 1220">
+    <g class="system__rings_content">
+        <rect id="system__bg" width="1220" height="1220" fill="none"/>
+        <g id="system__ring_content">
+        <g id="system__ring" transform="translate(454 456)" fill="none" stroke="#ff00c4" stroke-width="1">
+            <ellipse cx="156.5" cy="154" rx="156.5" ry="154" stroke="none"/>
+            <ellipse cx="156.5" cy="154" rx="156" ry="153.5" fill="none"/>
+        </g>
+        <g id="system__planet_content">
+            <g class="system__bg" data-name="system__bg" transform="translate(588 433)" fill="none" stroke="#06f" stroke-width="1">
+            <rect width="46" height="46" stroke="none"/>
+            <rect x="0.5" y="0.5" width="45" height="45" fill="none"/>
+            </g>
+            <g class="system__ring_content" data-name="system__ring_content">
+            <g class="system__ring" data-name="system__ring" transform="translate(591 437)" fill="none" stroke="#ff00c4" stroke-width="1">
+                <ellipse cx="19.5" cy="19" rx="19.5" ry="19" stroke="none"/>
+                <ellipse cx="19.5" cy="19" rx="19" ry="18.5" fill="none"/>
+            </g>
+            <circle id="system__moon" cx="7" cy="7" r="7" transform="translate(619 437)" fill="#ffdf00"/>
+            </g>
+            <circle id="system__planet" cx="8" cy="8" r="8" transform="translate(603 448)" fill="red"/>
+        </g>
+        </g>
+        <g class="system__ring_content" data-name="system__ring_content">
+        <g class="system__ring" data-name="system__ring" transform="translate(401 403)" fill="none" stroke="#ff00c4" stroke-width="1">
+            <ellipse cx="209.5" cy="207" rx="209.5" ry="207" stroke="none"/>
+            <ellipse cx="209.5" cy="207" rx="209" ry="206.5" fill="none"/>
+        </g>
+        <g class="system__planet_content" data-name="system__planet_content">
+            <g class="system__bg" data-name="system__bg" transform="translate(600 392)" fill="none" stroke="#06f" stroke-width="1">
+            <rect width="22" height="22" stroke="none"/>
+            <rect x="0.5" y="0.5" width="21" height="21" fill="none"/>
+            </g>
+            <circle class="system__planet" data-name="system__planet" cx="10" cy="10" r="10" transform="translate(601 393)" fill="red"/>
+        </g>
+        </g>
+        <g class="system__ring_content" data-name="system__ring_content">
+        <g class="system__ring" data-name="system__ring" transform="translate(45 51)" fill="none" stroke="#ff00c4" stroke-width="1">
+            <ellipse cx="565.5" cy="559" rx="565.5" ry="559" stroke="none"/>
+            <ellipse cx="565.5" cy="559" rx="565" ry="558.5" fill="none"/>
+        </g>
+        <g class="system__planet_content" data-name="system__planet_content">
+            <g class="system__bg" data-name="system__bg" transform="translate(573 13)" fill="none" stroke="#06f" stroke-width="1">
+            <rect width="76" height="76" stroke="none"/>
+            <rect x="0.5" y="0.5" width="75" height="75" fill="none"/>
+            </g>
+            <circle class="system__planet" data-name="system__planet" cx="37" cy="37" r="37" transform="translate(574 14)" fill="red"/>
+        </g>
+        </g>
+        <g class="system__ring_content" data-name="system__ring_content">
+        <g class="system__ring" data-name="system__ring" transform="translate(518 519)" fill="none" stroke="#ff00c4" stroke-width="1">
+            <ellipse cx="92.5" cy="91" rx="92.5" ry="91" stroke="none"/>
+            <ellipse cx="92.5" cy="91" rx="92" ry="90.5" fill="none"/>
+        </g>
+        <g class="system__planet_content" data-name="system__planet_content">
+            <g class="system__bg" data-name="system__bg" transform="translate(601 509)" fill="none" stroke="#06f" stroke-width="1">
+            <rect width="20" height="20" stroke="none"/>
+            <rect x="0.5" y="0.5" width="19" height="19" fill="none"/>
+            </g>
+            <circle class="system__planet" data-name="system__planet" cx="9" cy="9" r="9" transform="translate(602 510)" fill="red"/>
+        </g>
+        </g>
+        <ellipse class="system__sun" cx="28.5" cy="28" rx="28.5" ry="28" transform="translate(582 582)" fill="#1f0"/>
+    </g>
+    </svg>

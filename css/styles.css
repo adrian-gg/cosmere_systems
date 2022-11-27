@@ -1,0 +1,433 @@
+:root{
+    --bgc-black: #1B1D21;
+    --bgc-gold: #CCAD6C;
+    --time-appear: .6s;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{ font-size: .5vmax; /* font-size: 10px; */ /* 8px */}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://cosmere.es/wp-content/uploads/2017/10/bg-stars.gif');
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    cursor: url('../img/cursor.svg'), auto;
+}
+body::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--bgc-black);
+    mix-blend-mode: screen;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+}
+body::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/bg-stars.png');
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: screen;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .8;
+}
+main{
+    transform-box: fill-box;
+    transition: translate 1s, scale 1s;
+    z-index: 9;
+}
+main, section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    position: absolute;
+}
+
+
+
+
+
+/*=== COSMERE SCREEN ===*/
+
+.logo_cosmere{
+    width: 27.8rem;
+    height: 27.8rem;
+    position: absolute;
+}
+.logo_cosmere img{
+    width: 100%;
+    height: auto;
+}
+
+.logo_cosmere__rings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ring{
+    border: .1rem solid var(--bgc-gold);
+    border-radius: 100%;
+    position: absolute;
+    animation: appear var(--time-appear) ease-in-out forwards;
+    opacity: .2;
+    transition: opacity 1s;
+}
+@keyframes appear {
+    0%{ width: 0rem; height: 0rem; }
+}
+.logo_cosmere__rings .ring:nth-child(9){ width: 47rem; height: 47rem; }
+.logo_cosmere__rings .ring:nth-child(8){ width: 69.8rem; height: 69.8rem; /* animation-delay: calc(var(--time-appear) / 6); */ }
+.logo_cosmere__rings .ring:nth-child(7){ width: 91.8rem; height: 91.8rem; /* animation-delay: calc((var(--time-appear) / 6) * 2); */ }
+.logo_cosmere__rings .ring:nth-child(6){ width: 116.8rem; height: 116.8rem; /* animation-delay: calc((var(--time-appear) / 6) * 3); */ }
+.logo_cosmere__rings .ring:nth-child(5){ width: 133.2rem; height: 133.2rem; /* animation-delay: calc((var(--time-appear) / 6) * 4); */ }
+.logo_cosmere__rings .ring:nth-child(4){ width: 142rem; height: 142rem; /* animation-delay: calc((var(--time-appear) / 6) * 5); */ }
+.logo_cosmere__rings .ring:nth-child(3){ width: 165.6rem; height: 165.6rem; /* animation-delay: calc((var(--time-appear) / 6) * 6); */ }
+.logo_cosmere__rings .ring:nth-child(2){ width: 189.8rem; height: 189.8rem; /* animation-delay: calc((var(--time-appear) / 6) * 7); */ }
+.logo_cosmere__rings .ring:nth-child(1){ width: 221.4rem; height: 221.4rem; /* animation-delay: calc((var(--time-appear) / 6) * 7); */ }
+#main.main--zoom-in .logo_cosmere__rings .ring{ opacity: 0; }
+.asteroid_belt, .asteroids{
+    border: none;
+    background-image: url('../img/asteroid_belt.svg');
+    background-position: center;
+    background-size: cover;
+    animation: rotation 180s linear infinite;
+}
+@keyframes rotation{
+    to{ rotate: 360deg; }
+}
+.asteroids{
+    background-image: url('../img/asteroids.svg');
+}
+
+
+
+
+/*=== GRID ===*/
+
+.grid{
+    background-image: url('../img/cell.svg');
+    background-position: center;
+    background-size: 22.5rem 22.5rem;
+    opacity: .1;
+    transition: opacity .4s;
+}
+.main--zoom-in .grid{ opacity: 0; }
+
+
+
+
+
+/*=== CONSTELLATIONS ===*/
+
+.constellation{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;    
+    position: absolute;
+    pointer-events: none;
+    transition: opacity .4s;
+    transform-origin: center;
+}
+.constellation svg{ transition: translate 1s, scale .4s; }
+.constellation svg .line{ opacity: .8; }
+.constellation svg .star{
+    /* fill: var(--bgc-gold); */
+    filter: drop-shadow(0 0 1rem /* var(--bgc-gold) */white) blur(.15rem);
+}
+
+.main--zoom-in .constellation{ opacity: 0; }
+
+
+
+
+
+/*=== SYSTEMS ===*/
+
+.systems{ z-index: 9; }
+.system{
+    width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;    
+}
+.system__content{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: center;
+    pointer-events: none;
+}
+
+.main--zoom-in .system__content{
+    pointer-events: initial;
+}
+svg{
+    width: 122rem;
+    height: 122rem;
+}
+#nalthian_system, .system__rings_content{ transform-origin: center!important;}
+.system__rings_content{
+    transition: translate 1s, scale .2s;
+}
+.main--zoom-in .system__rings_content{
+    scale: 0.25;
+    translate: 0 calc(((100% / 4) * 0.25));
+}
+.system__ring_content{
+    transition: opacity .2s;
+    opacity: 0;
+    pointer-events: none;
+}
+.main--zoom-in .system .system__ring_content{
+    pointer-events: initial;
+    opacity: 1;
+}
+.system__ring{
+    stroke: white!important;
+    pointer-events: none;
+    opacity: .2;
+    position: absolute;
+    z-index: -1;
+}
+.system__ring.comet_belt,
+.system__ring.asteroid_belt,
+.system__ring_content.comet_belt{
+    pointer-events: none!important;
+}
+.main--zoom-in .system__ring.comet_belt,
+.main--zoom-in .system__ring.asteroid_belt,
+.main--zoom-in .system__ring_content.comet_belt
+{    
+    animation: rotation 180s linear infinite;
+}
+.system__ring.comet_belt{ transform-origin: center; }
+.system__ring.asteroid_belt, .system__ring_content.comet_belt{
+    transform-origin: center;
+    transform-box: fill-box;
+
+}
+.system__ring.asteroid_belt *{
+    stroke: none!important;
+    fill: white!important;
+}
+.system__sun{
+    r: 1.2rem;
+    fill: white;
+    filter: drop-shadow(0 0 1rem white) blur(.1rem);/*.05*/
+    transition: r 1s, translate 1s, scale 1s;
+    transform-origin: center;
+    cursor: url('../img/cursor-hov.svg'), auto;
+}
+.system__star{fill: white;}
+.system__planet_content{
+    transition: scale .2s;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+.system__planet_content:hover{
+    scale: 2;
+    filter: drop-shadow(0 0 1rem var(--bgc-black));
+    z-index: 9;
+}
+.system__planet{
+    position: absolute;
+    z-index: 9;
+    fill: var(--bgc-gold);
+    transition: scale .2s;
+    cursor: url(../img/cursor-hov.svg), auto;
+}
+.system__planet_ring{
+    stroke: var(--bgc-gold);
+}
+.system__unplanet{
+    fill: var(--bgc-black);
+    stroke: var(--bgc-gold);
+}
+.system__moon{ fill: var(--bgc-gold); }
+.system__bg{
+    stroke: none;
+    fill: rgba(255, 255, 255, 0);
+}
+
+.system__sun_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.system__sun_content .sun{
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 100%;
+    position: absolute;
+}
+.main--zoom-in .system__sun_content{
+    pointer-events: none;
+}
+.main--zoom-in .system__sun_content .sun{
+    opacity: 0;
+}
+.system__sun_content h4{
+    filter: drop-shadow(0 0 1rem var(--bgc-black));
+    translate: 0 -3rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .2rem;    
+    white-space: nowrap;
+    color: var(--bgc-gold);
+    pointer-events: none;
+    transition: opacity 3s, translate 2s;
+}
+.main--zoom-in .system .system__sun_content h4{
+    transition: opacity .2s, translate .2s;
+    /* translate: 0; */
+    opacity: 0;
+}
+
+.main--zoom-in .system{
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+
+
+
+
+/*=== INFO ===*/
+
+#info{
+    width: 50%;
+    height: 100vh;
+    padding: 19rem 14.4rem;
+    padding-top: 0;
+    background-color: rgba(0, 0, 0, .42);
+    display: initial;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    translate: 100% 0%;
+    transition: opacity 1s, translate 1s;
+    /* pointer-events: none; */
+    opacity: 0;
+}
+#info.info--on{
+    translate: 0% 0%;
+    opacity: 1;
+}
+
+.info__main_data{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+.main_data__logo_system{
+    width: 100%;
+    height: 32rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_data__logo_system::before{
+    content: "";
+    width: 50rem;
+    height: 50rem;
+    border-radius: 100%;
+    background: radial-gradient(closest-side, rgba(235, 229, 169, 1), rgba(235, 229, 169, 0));
+    position: absolute;
+    z-index: -1;
+    opacity: .1;
+}
+.main_data__logo_system img{
+    width: 32rem;
+    height: 32rem;
+}
+.main_data__head_text{
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--bgc-gold);
+}
+.main_data__space_line, .main_data__arrow{
+    width: 15.6rem;
+    height: 0.6rem;
+    margin: 0 auto;
+    margin-top: 2.4rem;
+    margin-bottom: 3.3rem;
+    background-image: url('../img/space_line.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;    
+}
+
+.main_data__description_text{
+    margin-bottom: 8.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: .15rem;
+    line-height: 3rem;
+    text-align: center;
+    color: white;
+}
+.main_data__arrow{
+    width: 5.5em;
+    height: 1.2em;
+    background-image: url('../img/arrow.svg');
+    margin-bottom: 10.3rem;
+    animation: flicker 2s linear infinite;
+}
+@keyframes flicker{
+    0%{opacity: 1}
+    50%{opacity: .5}
+    100%{opacity: 1}
+}
+
+.info__secondary_data{ margin-top: 10rem; }
+.head_text{
+    /* margin-bottom: 2.4rem; */
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    color: var(--bgc-gold);
+}
+.paragraph_text{
+    margin-top: 2.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: .15rem;
+    line-height: 3rem;
+    color: white;
+}
+.paragraph_text span{font-weight: 500;}

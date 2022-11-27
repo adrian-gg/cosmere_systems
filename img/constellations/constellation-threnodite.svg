@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="428" height="428" viewBox="0 0 428 428">
+  <g id="constellation-threnodite" transform="translate(-669 -2365)">
+    <rect id="bg" width="428" height="428" transform="translate(669 2365)" fill="none" opacity="0"/>
+    <g id="lines">
+      <path id="line" d="M927.819,2510.921l79.194,16.946-.549,74.148-54.509,38.27L883,2579l-26.97,84.233L966.514,2774.7l23.553-59.837" fill="none" stroke="#ccad6c" stroke-width="1"/>
+    </g>
+    <g id="stars">
+      <circle id="star" cx="1" cy="1" r="1" transform="translate(882 2578)" fill="#fff"/>
+      <circle id="star-2" data-name="star" cx="3" cy="3" r="3" transform="translate(949 2637)" fill="#fff"/>
+      <circle id="star-3" data-name="star" cx="3" cy="3" r="3" transform="translate(853 2660)" fill="#fff"/>
+      <circle id="star-4" data-name="star" cx="3" cy="3" r="3" transform="translate(987 2712)" fill="#fff"/>
+      <circle id="star-5" data-name="star" cx="3.5" cy="3.5" r="3.5" transform="translate(963 2771)" fill="#fff"/>
+      <circle id="star-6" data-name="star" cx="3" cy="3" r="3" transform="translate(925 2508)" fill="#fff"/>
+      <circle id="star-7" data-name="star" cx="3" cy="3" r="3" transform="translate(1004 2525)" fill="#fff"/>
+      <circle id="star-8" data-name="star" cx="4" cy="4" r="4" transform="translate(1002 2598)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

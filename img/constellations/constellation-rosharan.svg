@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="614" height="614" viewBox="0 0 614 614">
+  <g id="constellation-rosharan" transform="translate(47 -3158)">
+    <g id="bg" transform="translate(-47 3158)" fill="none" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="614" height="614" stroke="none"/>
+      <rect x="0.5" y="0.5" width="613" height="613" fill="none"/>
+    </g>
+    <g id="lines">
+      <path id="line" d="M260,3465l12.137-147.21,68.878-50.816,171.28-96.941" fill="none" stroke="#ccad6c" stroke-width="1"/>
+      <path id="line-2" data-name="line" d="M55.5,3497.5l82.324-67.971,60.569-95.51,19.777-94.071,53.815,78.088" fill="none" stroke="#ccad6c" stroke-width="1"/>
+    </g>
+    <g id="stars">
+      <circle id="star" cx="3.5" cy="3.5" r="3.5" transform="translate(52 3494)" fill="#fff"/>
+      <circle id="star-2" data-name="star" cx="3.5" cy="3.5" r="3.5" transform="translate(134 3426)" fill="#fff"/>
+      <circle id="star-3" data-name="star" cx="3" cy="3" r="3" transform="translate(195 3331)" fill="#fff"/>
+      <circle id="star-4" data-name="star" cx="3" cy="3" r="3" transform="translate(215 3237)" fill="#fff"/>
+      <circle id="star-5" data-name="star" cx="3" cy="3" r="3" transform="translate(269 3315)" fill="#fff"/>
+      <circle id="star-6" data-name="star" cx="4" cy="4" r="4" transform="translate(337 3263)" fill="#fff"/>
+      <circle id="star-7" data-name="star" cx="3" cy="3" r="3" transform="translate(509 3167)" fill="#fff"/>
+      <circle id="star-8" data-name="star" cx="1" cy="1" r="1" transform="translate(259 3464)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
