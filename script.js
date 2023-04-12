@@ -184,7 +184,44 @@ $(document).ready(function(){
             This planet is the furthest out in the system, and is much farther from the other three planets than they are from each other. It is also much larger than the other three planets, which are similar in size to each other. The exclamation "Purity's Eye," used by Nazh, likely derives from this planet.</p>
         </div>`
         }
-    }           
+    }
+
+    function pantallaCompleta() {
+      //Si el navegador es Mozilla Firefox 
+      if(document.documentElement.mozRequestFullScreen) {
+        document.documentElement.mozRequestFullScreen(); 
+      }
+      //Si el navegador es Google Chrome
+      else if(document.documentElement.webkitRequestFullScreen) {
+        document.documentElement.webkitRequestFullScreen();
+      }
+      //Si el navegador es otro else
+      if(document.documentElement.requestFullScreen) {
+        document.documentElement.requestFullScreen();
+      }
+    }
+    /* function pantallaNormal() {
+      //Mozilla Firefox
+      if(document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+      }
+      //Google Chrome
+      else if(document.webkitCancelFullScreen) {
+          document.webkitCancelFullScreen();
+      }
+      //Otro
+      else if(document.cancelFullScreen) {
+          document.cancelFullScreen();
+      }
+    } */
+
+    $('#btn_start').click(function(){
+      console.log('F');
+      pantallaCompleta();
+      $('#intro').children('.content').hide()
+      $('#intro').addClass('show_section')
+      //$('#main').show();
+    })
 
     $('.system .system__sun_content .sun').click(function(){
         var screenW = $(window).width();
@@ -230,6 +267,8 @@ $(document).ready(function(){
 
     $('.system .system__rings_content .system__sun').click(function(){
         main.removeClass('main--zoom-in');
+        //info.scrollTop(0);
+        info.animate({scrollTop:(0)}, 1000);
         info.removeClass('info--on');
     });
 
