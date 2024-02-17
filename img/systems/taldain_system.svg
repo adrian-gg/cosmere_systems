@@ -1,65 +1,34 @@
-<svg id="threnodite_system" xmlns="http://www.w3.org/2000/svg" width="1220" height="1220" viewBox="0 0 1220 1220">
-    <g class="system__rings_content">
-        <rect id="system__bg" width="1220" height="1220" fill="none"/>
-        <g id="system__ring_content">
-        <g id="system__ring" transform="translate(454 456)" fill="none" stroke="#ff00c4" stroke-width="1">
-            <ellipse cx="156.5" cy="154" rx="156.5" ry="154" stroke="none"/>
-            <ellipse cx="156.5" cy="154" rx="156" ry="153.5" fill="none"/>
-        </g>
-        <g id="system__planet_content">
-            <g class="system__bg" data-name="system__bg" transform="translate(588 433)" fill="none" stroke="#06f" stroke-width="1">
-            <rect width="46" height="46" stroke="none"/>
-            <rect x="0.5" y="0.5" width="45" height="45" fill="none"/>
-            </g>
-            <g class="system__ring_content" data-name="system__ring_content">
-            <g class="system__ring" data-name="system__ring" transform="translate(591 437)" fill="none" stroke="#ff00c4" stroke-width="1">
-                <ellipse cx="19.5" cy="19" rx="19.5" ry="19" stroke="none"/>
-                <ellipse cx="19.5" cy="19" rx="19" ry="18.5" fill="none"/>
-            </g>
-            <circle id="system__moon" cx="7" cy="7" r="7" transform="translate(619 437)" fill="#ffdf00"/>
-            </g>
-            <circle id="system__planet" cx="8" cy="8" r="8" transform="translate(603 448)" fill="red"/>
-        </g>
-        </g>
-        <g class="system__ring_content" data-name="system__ring_content">
-        <g class="system__ring" data-name="system__ring" transform="translate(401 403)" fill="none" stroke="#ff00c4" stroke-width="1">
-            <ellipse cx="209.5" cy="207" rx="209.5" ry="207" stroke="none"/>
-            <ellipse cx="209.5" cy="207" rx="209" ry="206.5" fill="none"/>
-        </g>
-        <g class="system__planet_content" data-name="system__planet_content">
-            <g class="system__bg" data-name="system__bg" transform="translate(600 392)" fill="none" stroke="#06f" stroke-width="1">
-            <rect width="22" height="22" stroke="none"/>
-            <rect x="0.5" y="0.5" width="21" height="21" fill="none"/>
-            </g>
-            <circle class="system__planet" data-name="system__planet" cx="10" cy="10" r="10" transform="translate(601 393)" fill="red"/>
-        </g>
-        </g>
-        <g class="system__ring_content" data-name="system__ring_content">
-        <g class="system__ring" data-name="system__ring" transform="translate(45 51)" fill="none" stroke="#ff00c4" stroke-width="1">
-            <ellipse cx="565.5" cy="559" rx="565.5" ry="559" stroke="none"/>
-            <ellipse cx="565.5" cy="559" rx="565" ry="558.5" fill="none"/>
-        </g>
-        <g class="system__planet_content" data-name="system__planet_content">
-            <g class="system__bg" data-name="system__bg" transform="translate(573 13)" fill="none" stroke="#06f" stroke-width="1">
-            <rect width="76" height="76" stroke="none"/>
-            <rect x="0.5" y="0.5" width="75" height="75" fill="none"/>
-            </g>
-            <circle class="system__planet" data-name="system__planet" cx="37" cy="37" r="37" transform="translate(574 14)" fill="red"/>
-        </g>
-        </g>
-        <g class="system__ring_content" data-name="system__ring_content">
-        <g class="system__ring" data-name="system__ring" transform="translate(518 519)" fill="none" stroke="#ff00c4" stroke-width="1">
-            <ellipse cx="92.5" cy="91" rx="92.5" ry="91" stroke="none"/>
-            <ellipse cx="92.5" cy="91" rx="92" ry="90.5" fill="none"/>
-        </g>
-        <g class="system__planet_content" data-name="system__planet_content">
-            <g class="system__bg" data-name="system__bg" transform="translate(601 509)" fill="none" stroke="#06f" stroke-width="1">
-            <rect width="20" height="20" stroke="none"/>
-            <rect x="0.5" y="0.5" width="19" height="19" fill="none"/>
-            </g>
-            <circle class="system__planet" data-name="system__planet" cx="9" cy="9" r="9" transform="translate(602 510)" fill="red"/>
-        </g>
-        </g>
-        <ellipse class="system__sun" cx="28.5" cy="28" rx="28.5" ry="28" transform="translate(582 582)" fill="#1f0"/>
-    </g>
-    </svg>
+<svg id="taldain_system" xmlns="http://www.w3.org/2000/svg" width="1220" height="1220" viewBox="0 0 1220 1220">
+                        <g class="system__rings_content">
+                          <rect class="system__bg" width="1220" height="1220" fill="none"/>
+                          <g class="system__ring_content">
+                            <g class="system__planet_content">
+                            <g class="system__bg" data-name="system__bg" transform="translate(586 273)" fill="none" stroke="#06f" stroke-width="1">
+                              <rect width="48" height="48" stroke="none"/>
+                              <rect x="0.5" y="0.5" width="47" height="47" fill="none"/>
+                            </g>
+                            <g class="system__ring_content" data-name="system__ring_content">
+                              <g class="system__ring" data-name="system__ring" transform="translate(587 274)" fill="none" stroke="#ff00c4" stroke-width="1">
+                                <circle cx="23" cy="23" r="23" stroke="none"/>
+                                <circle cx="23" cy="23" r="22.5" fill="none"/>
+                              </g>
+                              <circle class="system__moon" cx="4" cy="4" r="4" transform="translate(590 293)" fill="#ffdf00"/>
+                            </g>
+                            <circle class="system__planet" cx="7" cy="7" r="7" transform="translate(603 290)" fill="red"/>
+                          </g>
+                            <g class="system__ring" transform="translate(367 126)" fill="none" stroke="#ff00c4" stroke-width="1">
+                              <circle cx="243" cy="243" r="243" stroke="none"/>
+                              <circle cx="243" cy="243" r="242.5" fill="none"/>
+                            </g>
+                            <g class="system__ring_content comet_belt" data-name="system__ring_content">
+                              <path class="system__ring" data-name="system__ring" d="M684.692,2069.055c0,3.029-4.156,5.8-4.484,8.738-.334,3,3.1,6.62,2.445,9.513-.668,2.939-5.336,4.714-6.318,7.518-.993,2.84,1.547,7.136.252,9.819-1.3,2.7-6.25,3.389-7.84,5.915s-.079,7.292-1.943,9.626-6.843,1.911-8.958,4.026-1.686,7.089-4.026,8.958-7.09.345-9.627,1.942-3.21,6.536-5.914,7.841c-2.683,1.293-6.978-1.246-9.818-.253-2.806.982-4.579,5.65-7.518,6.318-2.893.657-6.51-2.78-9.513-2.445-2.941.328-5.709,4.484-8.738,4.484s-5.8-4.157-8.738-4.485c-3-.334-6.62,3.1-9.513,2.446-2.939-.668-4.713-5.336-7.519-6.319-2.839-.993-7.135,1.547-9.818.252-2.7-1.3-3.389-6.251-5.914-7.841s-7.293-.079-9.627-1.942-1.911-6.844-4.026-8.958-7.089-1.687-8.958-4.026-.345-7.089-1.942-9.627-6.536-3.21-7.841-5.914c-1.294-2.683,1.246-6.979.253-9.819-.982-2.8-5.65-4.579-6.318-7.517-.657-2.893,2.78-6.51,2.445-9.513-.327-2.941-4.484-5.709-4.484-8.737s4.157-5.8,4.484-8.739c.335-3-3.1-6.619-2.445-9.512.668-2.939,5.336-4.712,6.318-7.519.994-2.84-1.546-7.136-.252-9.818,1.3-2.7,6.251-3.39,7.841-5.915s.078-7.292,1.943-9.626,6.843-1.911,8.958-4.027,1.686-7.089,4.026-8.958,7.089-.344,9.626-1.942,3.21-6.536,5.915-7.841c2.683-1.295,6.978,1.246,9.817.253,2.806-.982,4.58-5.649,7.519-6.317,2.893-.659,6.51,2.779,9.513,2.444,2.941-.328,5.709-4.483,8.737-4.483s5.8,4.155,8.739,4.483c3,.335,6.62-3.1,9.512-2.444,2.94.668,4.713,5.336,7.52,6.318,2.839.993,7.135-1.547,9.818-.252,2.7,1.3,3.389,6.25,5.913,7.84s7.293.079,9.628,1.943,1.911,6.843,4.026,8.958,7.089,1.686,8.958,4.026.344,7.09,1.942,9.627,6.536,3.21,7.84,5.915c1.295,2.682-1.245,6.977-.252,9.817.982,2.806,5.649,4.58,6.318,7.519.657,2.892-2.78,6.51-2.446,9.512C680.536,2063.259,684.692,2066.026,684.692,2069.055Z" transform="translate(7.308 -1943.055)" fill="none" stroke="#ff00c4" stroke-miterlimit="10" stroke-width="1"/>
+                            </g>
+                            <g class="system__ring_content comet_belt" data-name="system__ring_content">
+                              <path class="system__ring" data-name="system__ring" d="M724.692,2069.055c0,3.017-4.106,5.861-4.324,8.822-.223,3.006,3.417,6.424,2.978,9.364-.445,2.977-4.928,5.18-5.588,8.081-.666,2.934,2.421,6.858,1.544,9.7-.885,2.871-5.647,4.377-6.737,7.152-1.1,2.794,1.366,7.137.069,9.825s-6.237,3.476-7.733,6.062.286,7.256-1.4,9.723-6.684,2.5-8.549,4.841-.794,7.217-2.829,9.409-6.979,1.483-9.173,3.52-1.851,7.016-4.191,8.885-7.119.431-9.593,2.121-2.871,6.664-5.465,8.165-7.1-.637-9.8.667-3.829,6.158-6.624,7.255c-2.774,1.09-6.919-1.693-9.79-.808-2.846.877-4.705,5.511-7.638,6.178-2.9.661-6.582-2.714-9.56-2.269-2.939.439-5.472,4.746-8.476,4.967-2.962.219-6.1-3.664-9.118-3.664s-6.155,3.883-9.116,3.664c-3.006-.223-5.537-4.528-8.477-4.967-2.978-.445-6.659,2.929-9.561,2.269-2.933-.667-4.792-5.3-7.639-6.178-2.871-.885-7.017,1.9-9.792.807-2.794-1.1-3.937-5.959-6.624-7.255s-7.217.827-9.8-.668-3-6.48-5.465-8.165-7.258-.255-9.593-2.121-2-6.852-4.192-8.886-7.137-1.326-9.172-3.52-.961-7.069-2.829-9.409-6.859-2.367-8.549-4.841.1-7.131-1.4-9.725-6.429-3.359-7.732-6.061c-1.3-2.686,1.167-7.03.07-9.824-1.09-2.775-5.852-4.279-6.737-7.151-.877-2.846,2.21-6.77,1.544-9.7-.66-2.9-5.142-5.1-5.587-8.081-.439-2.939,3.2-6.357,2.978-9.363-.219-2.961-4.325-5.8-4.325-8.822s4.106-5.861,4.325-8.823c.222-3-3.417-6.422-2.978-9.362.445-2.978,4.928-5.18,5.587-8.082.667-2.933-2.42-6.857-1.543-9.7.885-2.871,5.647-4.376,6.737-7.151,1.1-2.794-1.366-7.138-.07-9.826s6.238-3.475,7.733-6.06-.285-7.257,1.4-9.725,6.684-2.505,8.55-4.841.793-7.216,2.828-9.409,6.98-1.483,9.173-3.519,1.852-7.018,4.191-8.885,7.12-.432,9.594-2.122,2.87-6.663,5.465-8.164,7.1.636,9.8-.667c2.687-1.3,3.83-6.159,6.624-7.256,2.775-1.09,6.919,1.692,9.79.808,2.847-.877,4.706-5.512,7.639-6.179,2.9-.659,6.582,2.715,9.559,2.269,2.94-.439,5.472-4.744,8.477-4.966,2.962-.219,6.1,3.664,9.117,3.664s6.156-3.883,9.118-3.664c3.005.222,5.536,4.527,8.476,4.966,2.978.446,6.659-2.928,9.561-2.269,2.932.667,4.792,5.3,7.639,6.18,2.871.884,7.017-1.9,9.791-.809,2.794,1.1,3.937,5.959,6.624,7.256,2.7,1.305,7.218-.827,9.8.668s3,6.479,5.464,8.165,7.258.256,9.594,2.122,2,6.851,4.192,8.886,7.136,1.326,9.172,3.519.96,7.07,2.829,9.409,6.859,2.368,8.549,4.841-.1,7.13,1.4,9.725,6.429,3.358,7.733,6.059-1.167,7.032-.07,9.826c1.089,2.774,5.852,4.279,6.736,7.15.878,2.847-2.21,6.77-1.543,9.7.659,2.9,5.142,5.1,5.587,8.081.439,2.94-3.2,6.358-2.978,9.363C720.586,2063.193,724.692,2066.037,724.692,2069.055Z" transform="translate(7.308 -1943.055)" fill="none" stroke="#ff00c4" stroke-miterlimit="10" stroke-width="1"/>
+                            </g>
+                            <circle class="system__star" cx="14" cy="14" r="14" transform="translate(596 112)" fill="red"/>
+                          </g>
+                          
+                          <circle class="system__sun" cx="118.5" cy="118.5" r="118.5" transform="translate(492 494)" fill="#1f0"/>
+                        </g>
+                      </svg>

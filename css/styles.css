@@ -74,6 +74,34 @@ section{
 }
 
 
+.btn_nav{
+  padding-right: 3rem;
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 9;
+}
+#btn_cfullscreen::before{
+  content: "close ";
+}
+#btn_cfullscreen.cfull--open::before{
+  content: "open ";
+}
+#btn_quit, #btn_cfullscreen{
+  padding: 1.6rem 0;
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 3px black) drop-shadow(0px 0px 10px black);
+}
+
+#btn_quit:hover, #btn_cfullscreen:hover{
+  color: white;
+}
+
+
 section#intro{
   width: 100%;
   height: 100%;  
@@ -112,7 +140,7 @@ section#intro p{
   line-height: 3rem;
   margin-bottom: 1rem;
 }
-section#intro button{
+section#intro button, button{
   padding: 1.6rem 6rem;
   border: 1px solid var(--bgc-gold);
   background-color: black;
@@ -126,7 +154,7 @@ section#intro button{
   cursor: url('../img/cursor-hov.svg'), auto;
   transition: .1s;
 }
-section#intro button:hover{
+section#intro button:hover, button:hover{
   border: 1px solid white;
   color: white;
 }
@@ -300,10 +328,13 @@ svg{
 .system__sun{
     r: 1.2rem;
     fill: white;
-    filter: drop-shadow(0 0 1rem white) blur(.1rem);/*.05*/
-    transition: r 1s, translate 1s, scale 1s;
+    filter: drop-shadow(0 0 1rem white) drop-shadow(0 0 2rem rgba(255, 255, 255, 0)) blur(.1rem);/*.05*/
+    transition: r 1s, translate 1s, scale 1s, filter .2s;
     transform-origin: center;
     cursor: url('../img/cursor-hov.svg'), auto;
+}
+.system__sun--hover{
+  filter: drop-shadow(0 0 1rem white) drop-shadow(0 0 2rem white) blur(.1rem);
 }
 .system__star{fill: white;}
 .system__planet_content{
@@ -388,11 +419,10 @@ svg{
 #info{
     width: 50%;
     height: 100vh;
-    padding: 19rem 14.4rem;
-    padding-top: 0;
+    padding: 0 14.4rem;
     background-color: rgba(0, 0, 0, .42);
     display: initial;
-    overflow: auto;
+    overflow: hidden;
     position: absolute;
     top: 0;
     right: 0;
@@ -407,6 +437,39 @@ svg{
     opacity: 1;
 }
 
+.info_content{
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 19rem;
+    overflow: auto;
+}
+.info_btn--close{
+    width: 3.8rem;
+    height: 3.8rem;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    transition: opacity 0.2s;
+}
+.info_btn--close:hover{
+    opacity: .4;
+    cursor: url('../img/cursor-hov.svg'), auto;
+}
+.info_btn--close::before, .info_btn--close::after{
+    content: "";
+    width: 100%;
+    height: .2rem;
+    background-color: var(--bgc-gold);
+    display: inline-block;
+    position: absolute;   
+}
+
+.info_btn--close::before{
+  transform: translateY(1.5rem) rotate(-45deg);
+}
+.info_btn--close::after{
+  transform: translateY(1.5rem) rotate(45deg);
+}
 .info__main_data{
     height: 100vh;
     display: grid;
@@ -421,6 +484,7 @@ svg{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .main_data__logo_system::before{
     content: "";

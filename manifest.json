@@ -1,0 +1,59 @@
+{
+  "lang": "en",
+  "short_name": "Systems of Cosmere",
+  "name": "Systems of Cosmere",
+  "icons": [
+    {
+      "src": "img/favicon/favicon-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "img/favicon/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "img/favicon/apple-touch-icon-57.png",
+      "sizes": "57x57",
+      "type": "image/png"
+    },
+    {
+      "src": "img/favicon/apple-touch-icon-76.png",
+      "sizes": "76x76",
+      "type": "image/png"
+    },
+    {
+      "src": "img/favicon/apple-touch-icon-120.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
+      "src": "img/favicon/android-chrome-icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "img/favicon/general-use-icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "img/favicon/apple-touch-icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "img/favicon/android-chrome-icon-194.png",
+      "sizes": "194x194",
+      "type": "image/png"
+    }
+],
+  "start_url": "index.html",
+  "background_color": "#1B1D21",
+  "display": "standalone",
+  "orientation": "landscape",
+  "scope": "./",
+  "theme_color": "#1B1D21",
+  "description": ""
+}

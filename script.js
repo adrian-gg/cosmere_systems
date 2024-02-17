@@ -3,8 +3,9 @@ $(document).ready(function(){
     const main = $('#main');
     const info = $('#info')
     const animationBox = $('.animation_box');         
-    var vmax;
-    var dadaSystem = {
+    let vmax;
+    let thisIdHover;
+    let dadaSystem = {
         'scadrian' : {
             info: `<div class="info__main_data">
                 <div class="main_data__logo_system"><img src="img/scadrian_logo.svg" alt=""></div>
@@ -185,6 +186,12 @@ $(document).ready(function(){
         </div>`
         }
     }
+    const constellations = [
+      'dragon', 'drominad', 'rosharan', 'scadrian_nalthian', 'selish', 'taldain', 'threnodite'
+    ]
+    const systems = [
+      'drominad', 'rosharan', 'scadrian', 'nalthian', 'selish', 'taldain', 'threnodite'
+    ]
 
     function pantallaCompleta() {
       //Si el navegador es Mozilla Firefox 
@@ -200,7 +207,7 @@ $(document).ready(function(){
         document.documentElement.requestFullScreen();
       }
     }
-    /* function pantallaNormal() {
+    function pantallaNormal() {
       //Mozilla Firefox
       if(document.mozCancelFullScreen) {
           document.mozCancelFullScreen();
@@ -213,32 +220,46 @@ $(document).ready(function(){
       else if(document.cancelFullScreen) {
           document.cancelFullScreen();
       }
-    } */
+    }
+    function cerrarCajaInfo(){
+        main.removeClass('main--zoom-in');
+        //info.scrollTop(0);
+        info.animate({scrollTop: 0}, 1000);
+        info.removeClass('info--on');
+    }
+
 
     $('#btn_start').click(function(){
-      console.log('F');
       pantallaCompleta();
-      $('#intro').children('.content').hide()
-      $('#intro').addClass('show_section')
-      //$('#main').show();
+      $('#intro').children('.content').hide();
+      $('#intro').addClass('show_section');
+    });
+    $('#btn_cfullscreen').click(function(){
+      if($('#btn_cfullscreen').hasClass('cfull--open')){
+          pantallaCompleta()
+      }else{
+          pantallaNormal();
+      }
+      $('#btn_cfullscreen').toggleClass('cfull--open');
+      
     })
 
     $('.system .system__sun_content .sun').click(function(){
-        var screenW = $(window).width();
-        var screenH = $(window).height();
+        let screenW = $(window).width();
+        let screenH = $(window).height();
         screenW > screenH ? vmax = screenW * 0.005 : vmax = screenH * 0.005;
-        var thisSystem = $(this).parent().parent().children('.system__content');
-        var thisIDSystem = $(this).parent().parent()[0].id;
+        let thisSystem = $(this).parent().parent().children('.system__content');
+        let thisIDSystem = $(this).parent().parent()[0].id;
         
 
-        var systemX = thisSystem.attr('data-systemx');
-        var systemY = thisSystem.attr('data-systemy');
+        let systemX = thisSystem.attr('data-systemx');
+        let systemY = thisSystem.attr('data-systemy');
 
         systemX < 0 ? systemX /= (-1) : systemX *= (-1);
         systemY < 0 ? systemY /= (-1) : systemY *= (-1);
-        var position = thisSystem.offset();
-        var systemW = thisSystem.width();
-        var systemH = thisSystem.height();
+        let position = thisSystem.offset();
+        let systemW = thisSystem.width();
+        let systemH = thisSystem.height();
 
         main.addClass('main--zoom-in');
         info.addClass('info--on');
@@ -261,29 +282,72 @@ $(document).ready(function(){
             'pointer-events: initial;'+
         '}');
 
-        info.empty().append(dadaSystem[thisIDSystem]['info']);
+        info.empty().append(`<div class="info_content">${dadaSystem[thisIDSystem]['info']}</div>`);
+        info.append('<div class="info_btn--close"></div>');
 
     });
 
-    $('.system .system__rings_content .system__sun').click(function(){
-        main.removeClass('main--zoom-in');
-        //info.scrollTop(0);
-        info.animate({scrollTop:(0)}, 1000);
-        info.removeClass('info--on');
+    $('.system__sun_content .sun').hover(
+      function(){//enter
+        $(this).parents('.system').find('.system__content .system__sun').addClass('system__sun--hover');
+      },
+      function(){//leaves
+        $(this).parents('.system').find('.system__content .system__sun').removeClass('system__sun--hover');
+      }
+    );
+
+    $('body').on('click', '.system .system__rings_content .system__sun', function(){
+      cerrarCajaInfo();
+    });
+    $('body').on('click', '.info_btn--close', function(){
+      cerrarCajaInfo();
     });
 
-    var thisIdHover;
-
-    $('.system__planet_content').mouseenter(function(){
+    $('.system__planet_content').hover(
+      function(){//enter
         thisIdHover = $(this).parent().parent().parent()[0].id;
 
         $('#'+thisIdHover+' .system__rings_content > .system__ring_content').css('opacity', '.2');
         $(this).parent().removeAttr('style');
-    });
-    $('.system__planet_content').mouseleave(function(){
+      },
+      function(){//leaves
         $('#'+thisIdHover+' .system__ring_content').removeAttr('style');
-    });
+      }
+    );
+
+
+    function cargarConstelaciones(constellations){
+      constellations.forEach(constellation => {
+        fetch(`./img/constellations/constellation-${constellation}.svg`)
+        .then(response => response.text())
+        .then(data => {
+          $(`.constellation-${constellation}`).append(data);
+        })
+        .catch(error => {
+          console.error('Error fetching constellation SVG:', error);
+        });
+      });
+      
+    }
+    function cargarSistemas(systems){
+      systems.forEach(system => {
+        fetch(`./img/systems/${system}_system.svg`)
+        .then(response => response.text())
+        .then(data => {
+          $(`#${system} .system__content`).append(data);
+        })
+        .catch(error => {
+          console.error('Error fetching constellation SVG:', error);
+        });
+      });
+      
+    }
+    cargarConstelaciones(constellations);
+    cargarSistemas(systems);
+
+
+    $('#btn_quit').click(function(){
+      window.close();
+    })
     
 });
-
-
